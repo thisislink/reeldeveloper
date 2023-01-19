@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fef9e8;
+    background-color: #fbf9f1;
     color: black;
     font-family: 'Poppins', sans-serif;
 }
@@ -94,7 +94,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom: 8px solid #222;
+    border-bottom: 8px solid #e9e8e2;
 }
 
 .hero-text {
@@ -104,13 +104,39 @@ nav {
 }
 
 .hero-text h1 {
-    font-weight: 400;
+    font-weight: 700;
     font-size: 1.5em;
+}
+
+.hero-text h2 {
+    font-weight: 400;
+    font-size: 1.2em;
     font-style: italic;
 }
 
+.join-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.join-button {
+    text-decoration: none;
+    background-color: #018A31;
+    color: #fff;
+    padding: 1rem;
+}
+
+.join-button:hover {
+    background-color: #00A12E;
+}
+
 @media (max-width: 768px) {
-    .hero-text {
+    .hero-text h1, .hero-text h2 {
+        font-size: 1.0em;
+    }
+    .about-text, .community-text, .join-button {
         font-size: 0.8em;
     }
     footer {
@@ -118,16 +144,54 @@ nav {
     }
 }
 
-.about {
-    border-bottom: 8px solid #222;
+.about, .contact {
+    padding: 4rem 2rem;
+    background-color: #f4f2ed;
+    border-bottom: 8px solid #e9e8e2;
 }
 
-.about-text {
+.about-text, .community-text {
     margin: 0 5%;
 }
 
-.about-text h2 {
+.about-text h2, .community h2, .contact h2 {
     text-align: center;
+}
+
+.community {
+    padding: 4rem 2rem;
+    border-bottom: 8px solid #e9e8e2;
+}
+
+.about-p-link {
+    text-decoration: none;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.contact-links li {
+    padding: 2rem;
+    font-size: 32px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-links a:hover {
+    color: #1DA1F2;
+}
+
+.second-social-link a:hover {
+    color: #0072b1;
 }
 
 footer {
@@ -136,11 +200,11 @@ footer {
     justify-content: center;
     padding: 20px;
     background-color: black;
-    color: white;
+    color: #fff;
     font-size: 0.8em;
 }
 
 #current-year {
-    color: #fef9e8;
+    color: #fff;
 }
 
