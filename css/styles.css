@@ -135,6 +135,12 @@ nav {
     }
 }
 
+.newsletter-js {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .about, .contact, .newsletter-section {
     padding: 4rem 2rem;
     background-color: #f4f2ed;
@@ -196,3 +202,4 @@ footer {
   
 
   
+
