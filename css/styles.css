@@ -119,11 +119,29 @@ nav {
     font-style: italic;
 }
 
+.join-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.join-button {
+    text-decoration: none;
+    background-color: #4b72b8;
+    color: #fff;
+    padding: 1rem;
+}
+
+.join-button:hover {
+    background-color: #23a24d;
+}
+
 @media (max-width: 768px) {
     .hero-text h1, .hero-text h2 {
         font-size: 1.0em;
     }
-    .about-text, .community-text {
+    .about-text, .community-text, .join-button {
         font-size: 0.8em;
     }
     footer {
@@ -202,4 +220,5 @@ footer {
   
 
   
+
 
