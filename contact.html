@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://tally.so/widgets/embed.js"></script>
+    <title>Contact - Reel Developer</title>
+    <style>
+        .contact-page {
+            padding: 8rem 2rem 4rem;
+            background-color: #f4f2ed;
+            border-bottom: 8px solid #e9e8e2;
+            min-height: 70vh;
+        }
+
+        .contact-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .contact-container h1 {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-container .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .form-note {
+            font-size: 0.875rem;
+            color: #666;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><a href="https://reeldeveloper.com">Reel Developer</a></div>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="/shop">Shop</a></li>
+        </ul>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+    </nav>
+
+    <section class="contact-page">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <p class="subtitle">We'd love to hear from you!</p>
+
+            <iframe data-tally-src="https://tally.so/embed/OD4xzk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="276" frameborder="0" marginheight="0" marginwidth="0" title="Contact"></iframe>
+
+            <p class="form-note">We typically respond within 24-48 hours.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Reel Developer &#169; 2022 - <span id="current-year"></span> | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms">Terms & Conditions</a></p>
+    </footer>
+    
+    <script src="scripts/brain.js"></script>
+    <script>
+        // Wait for Tally to load before calling loadEmbeds
+        if (typeof Tally !== 'undefined') {
+            Tally.loadEmbeds();
+        } else {
+            window.addEventListener('load', function() {
+                if (typeof Tally !== 'undefined') {
+                    Tally.loadEmbeds();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
