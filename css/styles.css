@@ -214,6 +214,10 @@ footer {
     font-size: 0.8em;
 }
 
+footer a {
+    color: #fff;
+}
+
 #current-year {
     color: #fff;
 }

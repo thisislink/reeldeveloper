@@ -1,0 +1,39 @@
+/* Terms & Privacy Policy Styles */
+
+.legal-page {
+    margin-top: 80px;
+}
+
+.legal-content {
+    text-align: left;
+}
+
+.legal-content h1,
+.legal-content h2,
+.legal-content h3 {
+    text-align: left;
+}
+
+.legal-content h1 {
+    margin-bottom: 1rem;
+}
+
+.legal-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.legal-content h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.legal-content p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.legal-content ul {
+    text-align: left;
+    margin-left: 2rem;
+}

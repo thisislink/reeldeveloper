@@ -1,0 +1,40 @@
+/* Contact Page Styles */
+.contact-page {
+    padding: 8rem 2rem 4rem;
+    background-color: #f4f2ed;
+    border-bottom: 8px solid #e9e8e2;
+    min-height: 70vh;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-container .subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.form-note {
+    font-size: 0.875rem;
+    color: #666;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 1.5rem;
+    }
+}
