@@ -1,17 +1,18 @@
-// Hamburger menu
-const nav = document.getElementById('nav');
+// Hamburger menu. Nav already declared in main.js
 const menuIcon = document.querySelector('.menu-icon');
 
 if (menuIcon) {
+  const navEl = document.getElementById('nav');
+
   menuIcon.addEventListener('click', () => {
-    const isOpen = nav.classList.toggle('menu-open');
+    const isOpen = navEl.classList.toggle('menu-open');
     menuIcon.setAttribute('aria-expanded', isOpen);
   });
 
   // Close menu when a nav link is clicked
   document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
-      nav.classList.remove('menu-open');
+      navEl.classList.remove('menu-open');
       menuIcon.setAttribute('aria-expanded', false);
     });
   });
