@@ -803,3 +803,87 @@
       footer { flex-direction: column; gap: 2rem; text-align: center; }
       .footer-links { flex-wrap: wrap; justify-content: center; }
     }
+
+    /* ── Kit form ── */
+    .kit-embed-wrapper {
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .seva-fields.formkit-fields {
+      display: flex !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      gap: 0 !important;
+    }
+
+    .formkit-field {
+      flex: 1 1 auto !important;
+      margin: 0 !important;
+      min-width: 0 !important;
+    }
+
+    .formkit-input {
+      background: rgba(255,255,255,0.04) !important;
+      border: 1px solid rgba(255,255,255,0.08) !important;
+      border-right: none !important;
+      border-radius: 0 !important;
+      color: #f0ece6 !important;
+      font-family: 'Jost', 'Helvetica Neue', sans-serif !important;
+      font-size: 0.8rem !important;
+      font-weight: 300 !important;
+      letter-spacing: 0.08em !important;
+      padding: 1rem 1.5rem !important;
+      box-shadow: none !important;
+      width: 100% !important;
+      outline: none !important;
+    }
+
+    .formkit-input::placeholder {
+      color: #4a4845 !important;
+    }
+
+    .formkit-submit {
+      background: #b89a5e !important;
+      border: 1px solid #b89a5e !important;
+      border-radius: 0 !important;
+      color: #0d0c0b !important;
+      font-family: 'Jost', 'Helvetica Neue', sans-serif !important;
+      font-size: 0.62rem !important;
+      font-weight: 400 !important;
+      letter-spacing: 0.22em !important;
+      text-transform: uppercase !important;
+      padding: 0 1.8rem !important;
+      box-shadow: none !important;
+      flex: 0 0 auto !important;
+      width: auto !important;
+      margin: 0 !important;
+      cursor: pointer !important;
+      height: auto !important;
+    }
+
+    .formkit-submit span {
+      color: #0d0c0b !important;
+      font-size: 0.62rem !important;
+      font-weight: 400 !important;
+      letter-spacing: 0.22em !important;
+      text-transform: uppercase !important;
+      padding: 1rem 0 !important;
+      display: block !important;
+    }
+
+    .formkit-alert {
+      background: transparent !important;
+      border: none !important;
+      color: #b89a5e !important;
+      font-size: 0.75rem !important;
+      letter-spacing: 0.08em !important;
+      box-shadow: none !important;
+      list-style: none !important;
+      padding: 0.5rem 0 !important;
+      text-align: center !important;
+    }
+
+    .formkit-powered-by-convertkit-container {
+      display: none !important;
+    }
