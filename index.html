@@ -1,72 +1,248 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Reel Developer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reel Developer — Interactive Mystery &amp; Deduction Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <nav>
-        <div class="logo"><a href="https://reeldeveloper.com" target="_blank">Reel Developer</a></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#">Games</a></li>
-            <li><a href="/shop">Store</a></li>
-        </ul>
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-    </nav>
-    
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h1>Welcome to Reel Developer</h1>
-            <h2>An indie game studio sharing the journey. Follow along for the ride.</h2>
-            <div class="join-button-container">
-                <a href="#newsletter" class="join-button">Subscribe to the Newsletter</a>
-            </div>
-        </div>
-    </section>
-    <section id="newsletter" class="newsletter-section">
-        <div class="newsletter-js">
-            <script async data-uid="1e0e7b3f3d" src="https://daphnelink.kit.com/1e0e7b3f3d/index.js"></script>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="about-text">
-            <h2>About Reel Developer</h2>
-            <p>
-                Welcome to Reel Developer!
-            </p>
-            <p>The idea for Reel Developer started in 2022 from a love of movies and games, where the name was inspired by using movie trailers as inspiration to create games. In 2026, the studio officially launched.</p>
-            
-            <p>The founder is a software engineer and lifelong game creator, now building her own studio.</p>
 
-            <p>We're here to make original games for a diverse audience that are fun to play and fun to build. While building the studio, our focus is on sharing the journey and building tools that help others establish their online presence and ship their first game.</p>
-            <p>Indie games, indie life.</p>
+  <!-- NAV -->
+
+  <nav id="nav">
+    <a href="#" class="nav-logo">Reel <span>Developer</span></a>
+    <ul class="nav-links">
+      <li><a href="#featured">Games</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+      <li><a href="https://github.com/thisislink/reeldeveloper" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+
+```
+<div class="hero-lines" aria-hidden="true">
+  <svg viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <line x1="0" y1="200" x2="1440" y2="200" stroke="#b89a5e" stroke-width="0.5"/>
+    <line x1="0" y1="700" x2="1440" y2="700" stroke="#b89a5e" stroke-width="0.5"/>
+    <line x1="360" y1="0" x2="360" y2="900" stroke="#b89a5e" stroke-width="0.5"/>
+    <line x1="1080" y1="0" x2="1080" y2="900" stroke="#b89a5e" stroke-width="0.5"/>
+    <circle cx="360" cy="200" r="3" fill="#b89a5e"/>
+    <circle cx="1080" cy="200" r="3" fill="#b89a5e"/>
+    <circle cx="360" cy="700" r="3" fill="#b89a5e"/>
+    <circle cx="1080" cy="700" r="3" fill="#b89a5e"/>
+    <line x1="360" y1="200" x2="1080" y2="700" stroke="#b89a5e" stroke-width="0.5" stroke-dasharray="6 10"/>
+    <line x1="1080" y1="200" x2="360" y2="700" stroke="#b89a5e" stroke-width="0.5" stroke-dasharray="6 10"/>
+  </svg>
+</div>
+
+<div class="hero-rule" aria-hidden="true"></div>
+
+<div class="hero-content">
+  <p class="hero-eyebrow">Reel Developer</p>
+  <h1 class="hero-headline">
+    Interactive <em>mystery</em><br>and deduction games.
+  </h1>
+  <p class="hero-sub">
+    Thoughtful games built around logic,<br>atmosphere, and elegant play.
+  </p>
+  <div class="hero-ctas">
+    <a href="#featured" class="btn-primary">View Games</a>
+    <a href="#newsletter" class="btn-ghost">Newsletter</a>
+  </div>
+</div>
+
+<div class="hero-scroll" aria-hidden="true">
+  <div class="scroll-line"></div>
+  <span>Scroll</span>
+</div>
+```
+
+  </section>
+
+  <!-- FEATURED GAME -->
+
+  <section id="featured">
+    <p class="section-label reveal">Featured Game</p>
+
+```
+<div class="featured-grid">
+  <div class="featured-visual reveal">
+    <div class="featured-visual-inner">
+      <div class="game-mockup">
+        <div class="clue-board">
+          <div class="clue-cell active">I</div>
+          <div class="clue-cell">II</div>
+          <div class="clue-cell marked">III</div>
+          <div class="clue-cell marked">IV</div>
+          <div class="clue-cell active">V</div>
+          <div class="clue-cell">VI</div>
+          <div class="clue-cell">VII</div>
+          <div class="clue-cell marked">VIII</div>
+          <div class="clue-cell active">IX</div>
         </div>
-    </section>
-    <section class="contact" id="contact">
-        <div class="contact-text">
-            <h2>Connect</h2>
-            <ul class="contact-links">
-                <li><a href="https://www.instagram.com/reel.developer" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li class="second-social-link"><a href="https://www.tiktok.com/@reeldeveloper" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
-            </ul>
+      </div>
+    </div>
+    <div class="featured-badge">In Development</div>
+  </div>
+
+  <div class="featured-text reveal reveal-delay-2">
+    <p class="featured-genre">Deduction Puzzle — Logic</p>
+    <h2 class="featured-title">The <em>Vampire</em><br>Logic Puzzle</h2>
+    <p class="featured-desc">
+      A deduction puzzle game where vampires, guests, clues, and hidden relationships must be logically unraveled. Each session unfolds as an exercise in elimination and inference — no guessing, only reason.
+    </p>
+    <div class="featured-meta">
+      <div class="meta-item">
+        <p class="meta-label">Genre</p>
+        <p class="meta-value">Deduction</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">Platform</p>
+        <p class="meta-value">Web</p>
+      </div>
+      <div class="meta-item">
+        <p class="meta-label">Status</p>
+        <p class="meta-value">In Development</p>
+      </div>
+    </div>
+    <a href="#newsletter" class="btn-ghost">Follow development</a>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- WHAT WE MAKE -->
+
+  <section id="what">
+    <div class="what-header">
+      <h2 class="what-title reveal">Games built for<br><em>thinking minds.</em></h2>
+      <p class="what-intro reveal reveal-delay-1">
+        Every title we create begins with a single question: what does it feel like to solve something elegant? We build experiences where logic is the mechanic and atmosphere is the reward.
+      </p>
+    </div>
+
+```
+<div class="what-grid">
+  <div class="what-item reveal">
+    <p class="what-number">01</p>
+    <svg class="what-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="4" y="4" width="12" height="12" stroke="#b89a5e" stroke-width="1"/>
+      <rect x="20" y="4" width="12" height="12" stroke="#b89a5e" stroke-width="1"/>
+      <rect x="4" y="20" width="12" height="12" stroke="#b89a5e" stroke-width="1"/>
+      <rect x="20" y="20" width="12" height="12" stroke="#b89a5e" stroke-width="1"/>
+      <line x1="4" y1="18" x2="32" y2="18" stroke="#b89a5e" stroke-width="0.5" opacity="0.4"/>
+      <line x1="18" y1="4" x2="18" y2="32" stroke="#b89a5e" stroke-width="0.5" opacity="0.4"/>
+    </svg>
+    <h3 class="what-name"><em>Deduction</em> Games</h3>
+    <p class="what-desc">Logic puzzles built on inference, elimination, and the satisfaction of an answer arrived at through pure reasoning. No luck. No grinding. Only thought.</p>
+  </div>
+
+  <div class="what-item reveal reveal-delay-1">
+    <p class="what-number">02</p>
+    <svg class="what-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="18" cy="18" r="13" stroke="#b89a5e" stroke-width="1"/>
+      <circle cx="18" cy="18" r="5" stroke="#b89a5e" stroke-width="1"/>
+      <line x1="18" y1="5" x2="18" y2="13" stroke="#b89a5e" stroke-width="0.5" opacity="0.5"/>
+      <line x1="18" y1="23" x2="18" y2="31" stroke="#b89a5e" stroke-width="0.5" opacity="0.5"/>
+      <line x1="5" y1="18" x2="13" y2="18" stroke="#b89a5e" stroke-width="0.5" opacity="0.5"/>
+      <line x1="23" y1="18" x2="31" y2="18" stroke="#b89a5e" stroke-width="0.5" opacity="0.5"/>
+    </svg>
+    <h3 class="what-name"><em>Mystery</em> Puzzles</h3>
+    <p class="what-desc">Atmospheric mystery experiences where narrative and mechanics intertwine. The world holds secrets. The player uncovers them — one careful observation at a time.</p>
+  </div>
+
+  <div class="what-item reveal reveal-delay-2">
+    <p class="what-number">03</p>
+    <svg class="what-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 30 L18 6 L30 30 Z" stroke="#b89a5e" stroke-width="1" fill="none"/>
+      <line x1="11" y1="22" x2="25" y2="22" stroke="#b89a5e" stroke-width="0.5" opacity="0.5"/>
+      <circle cx="18" cy="6" r="2" fill="#b89a5e" opacity="0.5"/>
+    </svg>
+    <h3 class="what-name">Interactive <em>Experiences</em></h3>
+    <p class="what-desc">Games that respect the player's intelligence. Thoughtfully designed interactions where every element has intention — the mechanics, the pacing, the moment of revelation.</p>
+  </div>
+</div>
+```
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section id="about">
+    <div class="about-visual reveal">
+      <div class="about-frame">
+        <div class="about-frame-inner">
+          <div class="about-monogram">rd</div>
         </div>
-    </section>
-    <footer>
-        <p>Reel Developer &#169; 2022 - <span id="current-year"></span> | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-and-conditions">Terms & Conditions</a></p>
-    </footer>
-    <script src="scripts/brain.js"></script>
+      </div>
+      <div class="about-quote">
+        <div class="about-quote-mark">"</div>
+        <p class="about-quote-text">The finest games ask nothing of your reflexes, and everything of your mind.</p>
+      </div>
+    </div>
+
+```
+<div class="about-text reveal reveal-delay-2">
+  <p class="section-label" style="margin-bottom: 2.5rem;">About</p>
+
+  <p class="about-statement">
+    Mystery and deduction games designed around <em>atmosphere, logic,</em> and thoughtful interaction.
+  </p>
+
+  <div class="about-divider"></div>
+
+  <p class="about-body">
+    Reel Developer creates mystery and deduction games built around logic, atmosphere, and thoughtful competition. We design experiences where observation, reasoning, and mastery matter.
+  </p>
+  <p class="about-body">
+    We believe restraint sharpens interaction. Clarity is part of the craft.
+  </p>
+
+  <a href="#newsletter" class="btn-ghost" style="margin-top: 1rem;">Stay informed</a>
+</div>
+```
+
+  </section>
+
+  <!-- NEWSLETTER -->
+
+  <section id="newsletter">
+    <p class="newsletter-eyebrow reveal">Correspondence</p>
+    <h2 class="newsletter-title reveal reveal-delay-1">Occasional <em>dispatches</em><br>from the studio.</h2>
+    <p class="newsletter-sub reveal reveal-delay-2">
+      Occasional updates on new mystery and deduction games from Reel Developer. No noise — only signal.
+    </p>
+    <div class="kit-embed-wrapper reveal reveal-delay-3">
+      <script async data-uid="1e0e7b3f3d" src="https://daphnelink.kit.com/1e0e7b3f3d/index.js"></script>
+    </div>
+    <p class="newsletter-note reveal reveal-delay-4">Infrequent. Considered. Always relevant.</p>
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <a href="#" class="footer-logo">Reel Developer</a>
+    <ul class="footer-links">
+      <li><a href="#featured">Games</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#newsletter">Newsletter</a></li>
+      <li><a href="https://github.com/thisislink/reeldeveloper" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 Reel Developer</p>
+  </footer>
+
+  <script src="main.js" defer></script>
+
 </body>
-
 </html>
-
-
-
